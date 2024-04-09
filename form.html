@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Reservation Form</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<h2>Ticket Reservation Form</h2>
+
+<form id="ticketForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="tickets">Number of Tickets:</label><br>
+    <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="2" required></textarea><br><br>
+
+    <label for="e-mail">E-mail:</label><br>
+    <input type="text" id="e-mail" e-mail="e-mail" required><br><br>
+    
+    <button type="button" onclick="confirmReservation()">Confirm</button>
+    <button type="button" onclick="cancelReservation()">Cancel</button>
+</form>
+
+<script>
+function confirmReservation() {
+    // Here you can add JavaScript code to handle the confirmation
+    // For example, you can submit the form data to a server or display a confirmation message
+    alert("Reservation confirmed!");
+}
+
+function cancelReservation() {
+    // Here you can add JavaScript code to handle cancellation
+    // For example, you can reset the form fields or redirect to another page
+    document.getElementById("ticketForm").reset();
+}
+</script>
+
+</body>
+</html>
