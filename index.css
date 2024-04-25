@@ -1,4 +1,4 @@
-table {
+/* table {
     width: 100%;
     border-collapse: collapse;
 }
@@ -12,15 +12,22 @@ th {
 }
 .header {
     display: flex;
+    width: fit-content;
     padding: 10px;
     background-color: #333;
     color: #fff;
     border-top-left-radius: 8px;
 }
-.login-btn {;
+.etb {
+    margin-left: 20px;
+    font-stretch: extra-expanded;
+    text-size-adjust: 100%;
+}
+.login-btn {
     margin: 40px;
     padding: 10px 20px;
     background-color: #007bff;
+    margin-left: 708px;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -29,9 +36,198 @@ th {
 .signup-btn {
     margin: 40px;
     padding: 10px 20px;
+    margin-left: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+/* Styles for the button */
+/* .book-ticket {
+    display: inline-block;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* border: none; */
+    /* border-radius: 5px;
+    border-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease; */
+  }
+  
+  /* Default button color */
+  /* .book-ticket.default {
+    /* background-color: #3498db;
+    color: #ffffff; */
+  } */
+  
+  /* Hover effect */
+  /* .book-ticket.default:hover {
+    background-color: #2980b9; */
+  /* } */
+  
+  /* Additional styles for colorful buttons */
+  /* .book-ticket.red {
+    background-color: #e74c3c;
+    color: #ffffff;
+  } */
+/*   
+  .book-ticket.red:hover {
+    background-color: #c0392b;
+  }
+  
+  .book-ticket.green {
+    background-color: #2ecc71;
+    color: #ffffff;
+  }
+  
+  .book-ticket.green:hover {
+    background-color: #27ae60;
+  }
+  
+  .book-ticket.yellow {
+    background-color: #f1c40f;
+    color: #ffffff;
+  }
+  
+  .book-ticket.yellow:hover {
+    background-color: #f39c12;
+  } */ */ */
+  
+  /* Add more color variations as needed */
+  
+  /* Usage example:
+     <button class="button default">Default Button</button>
+     <button class="button red">Red Button</button>
+     <button class="button green">Green Button</button>
+     <button class="button yellow">Yellow Button</button>
+  */
+  
+  /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  h2{
+    text-align: center;
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 8px;
+  }
+  
+  .etb {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .signup-btn {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .book-ticket {
+    padding: 7px 14px;
+    margin-left: 125px;
+    margin-right: 225px;
+    background-color: rgba(127,16,08,1);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(127,16,08,1);
+  }
+  
+  th {
+    /* background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% ); */
+    background-color: rgba(127,16,10,1);
+    color: #fff;
+    text-align: left;
+  }
+  .events{
+    background-color: rgba(127,16,10,1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .details{
+    background-color: rgba(127,16,10,1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Event details styles */
+  .event {
+    text-align: center;
+  }
+  
+  .event-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-style: italic;
+  }
+  
+  .event-date,
+  .event-location,
+  .event-price {
+    font-weight: bold;
+  }

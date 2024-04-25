@@ -1,29 +1,70 @@
-.login-container {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
+/* Resetting default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff; /* White container background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    color: #333; /* Dark grey */
+  }
+  
+  /* Input styles */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark grey */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light grey border */
+  }
+  
+  /* Login button styles */
+  .login-btn {
+    background-color: #FF5722; /* Orange */
     border: none;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
     cursor: pointer;
-}
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }
+  
+  /* Hover effect for the login button */
+  .login-btn:hover {
+    background-color: #E64A19; /* Darker orange */
+  }
+  
